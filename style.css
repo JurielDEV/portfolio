@@ -1,0 +1,484 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+/*NAVIGATION HEADER*/
+header{
+    display: flex;
+    height: 120px;
+    align-items: center;
+    border-color: white white black white;
+    border-style: solid;
+    box-shadow: 0px 0px 10px 0px rgb(78, 78, 78);
+}
+.logo-container, .nav-links, .nav-link{
+    display: flex;
+}
+.logo-container{
+    display: flex;
+    flex: 1;
+    font-size: 20px;
+    align-items: center;
+    margin-left: 88px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav-links{
+    justify-content: space-around;
+    letter-spacing: 3px;
+    margin-right: 88px;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-link{
+    font-size: 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 12px;color: black;
+    margin-right: 50px;
+}
+.nav-link:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    display: flex;
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px;
+    transition: all 0.3s ease-in;
+}
+
+/*CONTENT*/
+.presentation{
+    display: flex;
+    min-height: 90vh;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.introduction{
+    flex: 1;
+    margin-left: 170px;
+}
+.intro-text{
+    animation-name: fadeIn;
+    animation-duration: 5s;
+}
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.intro-text h1{
+    font-size: 90px;
+    letter-spacing: normal;
+    font-weight: 900;
+}
+.intro-text p{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.btn-GIT{
+    border: 3px solid black;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    padding: 15px;
+}
+.btn-GIT:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.logo-pic{
+    margin-right: 60px;
+    flex: 1;
+}
+
+/*ABOUT*/
+.about{
+    display: flex;
+    box-sizing: border-box;
+    min-height: 100vh;
+    align-items: center;
+    background-image: url('TB1.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    position: relative;
+}
+.about-me{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.profile img{
+    flex: 1;
+    border: solid black;
+}
+.about-text h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+.about-text p{
+    font-size: 24px;
+    font-weight: 300;
+    width: 800px;
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 1.8;
+}
+
+/*SKILLS*/
+.skill{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    background-image: url('TB2.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.my-skill{
+    flex: 1;
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+.skill-content{
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+}
+.skill-content
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.skill-content:before, .skill-content:after
+{
+  content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.skill-content:after
+{
+  right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+.grid-container-1{
+    width: 350px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border-radius: 20px;
+}
+.G-multi{
+    text-align: center;
+}
+.G-multi h2{
+    font-weight: 400;
+}
+.grid-item{
+    font-weight: 300;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+/*Video Editing*/
+.g1{
+    border: 1px solid black;
+    width: 200px;
+    height: 18px;
+}
+.g1 div{
+    border: solid black;
+    background-color: black;
+    width: 150px;
+    height: 16px;
+}
+/*Photoshop*/
+.g2{
+    border: 1px solid black;
+    width: 200px;
+    height: 18px;
+}
+.g2 div{
+    border: solid black;
+    background-color: black;
+    width: 110px;
+    height: 16px;
+}
+/*Illustrator*/
+.g3{
+    border: 1px solid black;
+    width: 200px;
+    height: 18px;
+}
+.g3 div{
+    border: solid black;
+    background-color: black;
+    width: 50px;
+    height: 16px;
+}
+/*Adobe Xd*/
+.g4{
+    border: 1px solid black;
+    width: 200px;
+    height: 18px;
+}
+.g4 div{
+    border: solid black;
+    background-color: black;
+    width: 120px;
+    height: 16px;
+}
+/*Figma*/
+.g5{
+    border: 1px solid black;
+    width: 200px;
+    height: 18px;
+}
+.g5 div{
+    border: solid black;
+    background-color: black;
+    width: 100px;
+    height: 16px;
+}
+
+.grid-container-2{
+    width: 350px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border-radius: 20px;
+}
+.G-languages{
+    text-align: center;
+}
+.G-languages h2{
+    font-weight: 400;
+}
+/*Java*/
+.g6{
+    border: 1px solid black;
+    width: 200px;
+    height: 18px;
+}
+.g6 div{
+    border: solid black;
+    background-color: black;
+    width: 40px;
+    height: 16px;
+}
+/*Python*/
+.g7{
+    border: 1px solid black;
+    width: 200px;
+    height: 18px;
+}
+.g7 div{
+    border: solid black;
+    background-color: black;
+    width: 80px;
+    height: 16px;
+}
+/*HTML*/
+.g8{
+    border: 1px solid black;
+    width: 200px;
+    height: 18px;
+}
+.g8 div{
+    border: solid black;
+    background-color: black;
+    width: 180px;
+    height: 16px;
+}
+/*CSS*/
+.g9{
+    border: 1px solid black;
+    width: 200px;
+    height: 18px;
+}
+.g9 div{
+    border: solid black;
+    background-color: black;
+    width: 120px;
+    height: 16px;
+}
+/*JavaScript*/
+.g10{
+    border: 1px solid black;
+    width: 200px;
+    height: 18px;
+}
+.g10 div{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/*PORTFOLIO*/
+.portfolio{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    background-image: url('TB3.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.my-portfolio{
+    align-items: center;
+}
+.title-portfolio{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+.underc p{
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+/*CONTACT*/
+.contact{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    background-image: url('TB4.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.my-contact{
+    align-items: center;
+}
+.title-contact{
+    flex: 1;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+.contact-bg{
+    width: 500px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 30px;
+    box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.555);
+}
+.contact-content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.container{
+    flex: 1;
+    width: 90vh;
+    margin-left: 45px;
+}
+.logo img{
+    margin-top: 30px;
+    margin-left: 35%;
+}
+label{
+    font-weight: 400;
+    color: white;
+}
+input[type=text], select, textarea {
+    display: flex;
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+input[type=submit]:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+.links-logo{
+    margin-left: 30%;
+}
+
+/*FOOTER*/
+.footer{
+    padding: 5px;
+    font-weight: 300;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
